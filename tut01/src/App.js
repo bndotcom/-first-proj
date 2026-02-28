@@ -1,20 +1,17 @@
 import './App.css';
 
 function App() {
-  const handleNames = () => {
-    const names = ['Creg','Madson','Staiccy','Bobi','Pete'];
-      const int = Math.floor(Math.random() * 5);
-        return names[int];
+  const handleNameChange = () => {
+      const names = ['Pete', 'Anderson','Creg','Jameson'];
+      const int = Math.floor(Math.random() * 4);
+      return names[int];
   }
-  
     
   return (
     <div className="App">
       <header className="App-header">
-       <p>
-       Hello: {handleNames()}!
-        </p>
-        
+      <p></p>
+        Hello: {handleNameChange()}
       </header>
     </div>
   );
